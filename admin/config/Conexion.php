@@ -1,9 +1,9 @@
 <?php 
-require_once "global.php";
+//require_once "global.php";
 
 $conexion=new mysqli(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME);
-
-mysqli_query($conexion, 'SET NAMES "'.DB_ENCODE.'"');
+$conexion=new mysqli("mysql311.eshos.com","adad","adasd","asdasda");
+//mysqli_query($conexion, 'SET NAMES "'.DB_ENCODE.'"');
 
 //muestra posible error en la conexion
 if (mysqli_connect_errno()) {
